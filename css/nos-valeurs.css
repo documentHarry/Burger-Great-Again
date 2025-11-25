@@ -1,0 +1,166 @@
+/* ========================================
+   NOS VALEURS
+   ======================================== */
+
+/* Section intro */
+.intro-section {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin-bottom: 4rem;
+    background: var(--color-primary-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.intro-section img {
+    width: 21.875rem;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.intro-content {
+    flex: 1;
+}
+
+.intro-content h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 2rem;
+}
+
+.intro-content p {
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+}
+
+/* Grille des valeurs */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: 4rem;
+}
+
+.value-card {
+    background: var(--color-white);
+    border: 0.188rem solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.value-card h3 {
+    color: var(--color-primary);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.value-card p {
+    color: var(--color-text-light);
+    font-size: 1.05rem;
+}
+
+/* Processus alternant */
+.process-step {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding: 1.5rem;
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.process-icon {
+    font-size: 5rem;
+    min-width: 6.25rem;
+    text-align: center;
+}
+
+.process-content {
+    flex: 1;
+}
+
+.process-content h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-xl);
+}
+
+.process-content p {
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+/* Engagements liste */
+.engagements-list {
+    background: var(--color-primary-light);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    border-left: 0.313rem solid var(--color-primary);
+}
+
+.engagements-list h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-2xl);
+}
+
+.engagements-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.engagements-list li {
+    padding: var(--spacing-sm) 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.engagements-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: var(--font-size-xl);
+}
+
+/* Citation */
+.quote {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    margin: var(--spacing-xl) 0;
+    font-size: var(--font-size-xl);
+    font-style: italic;
+}
+
+.quote-author {
+    margin-top: var(--spacing-md);
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Indication champs et notes */
+.required {
+    color: var(--color-primary);
+}
+
+.form-note {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}

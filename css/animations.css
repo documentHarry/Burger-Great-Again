@@ -1,0 +1,23 @@
+/* ========================================
+   ANIMATIONS ET TRANSITIONS
+   ======================================== */
+
+/* Hover effects - Mise en évidence au survol */
+.info-section:hover,
+.feature-card:hover,
+.info-box:hover,
+.intro-section:hover,
+.value-card:hover,
+.process-step:hover,
+.info-card:hover,
+.day-hours:hover,
+.product-card:hover,
+.side-item:hover {
+    transform: translateY(-0.313rem);
+    box-shadow: 0 0.313rem 0.938rem rgba(0, 0, 0, 0.2);
+}
+
+/* Transitions lisses */
+* {
+    --transition-speed: 0.3s;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Great Again - Réservation</title>
+    <!-- Variables CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <!-- Base -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- Components majeurs -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Components réutilisables -->
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Page spécifique (Commande/Formulaires) -->
+    <link rel="stylesheet" href="css/commande.css">
+    <!-- Responsive (TOUJOURS EN DERNIER) -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🍔 Burger Great Again</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="nos-valeurs.html">Nos Valeurs</a></li>
+                <li><a href="commande.html" class="active">Commande</a></li>
+                <li><a href="nous-trouver.html">Nous Trouver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Commandez un festin royal</h1>
+        <p class="page-subtitle">Remplissez le formulaire ci-dessous pour passer votre commande</p>
+
+        <!-- Info box avec Flexbox -->
+        <div class="info-box">
+            <div class="info-box-icon">⏱️</div>
+            <div class="info-box-content">
+                <h3>Délai de préparation</h3>
+                <p>Votre commande sera prête 20 à 30 minutes après validation. Vous recevrez une confirmation par email avec l'heure de retrait.</p>
+            </div>
+        </div>
+
+        <!-- Formulaire de commande -->
+        <form action="#" method="post">
+            <p class="form-note"><span class="required">*</span> Champs obligatoires</p>
+
+            <!-- Informations personnelles -->
+            <fieldset>
+                <legend>Vos Informations</legend>
+
+                <div class="form-group">
+                    <label for="nom">Nom <span class="required">*</span></label>
+                    <input type="text" id="nom" name="nom" required placeholder="Xavier">
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom <span class="required">*</span></label>
+                    <input type="text" id="prenom" name="prenom" required placeholder="Charles">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="charles.xavier@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Téléphone <span class="required">*</span></label>
+                    <input type="tel" id="telephone" name="telephone" required placeholder="0492 25 85 14">
+                </div>
+            </fieldset>
+
+            <!-- Détails de la commande -->
+            <fieldset>
+                <legend>Votre Commande</legend>
+
+
+                <div class="items-grid">
+                    <!-- BURGERS avec bouton à droite -->
+                    <div class="form-group">
+                        <label>Choisissez votre burger principal</label>
+                        
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>The President</strong>
+                                <span class="price">12,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="president-12.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>The Wall</strong>
+                                <span class="price">15,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="wall-15.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Freedom Burger</strong>
+                                <span class="price">11,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="freedom-11.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>The Patriot</strong>
+                                <span class="price">13,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="patriot-13.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Great Veggie</strong>
+                                <span class="price">11,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="veggie-11.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- ACCOMPAGNEMENTS avec bouton à droite -->
+                    <div class="form-group">
+                        <label>Accompagnements supplémentaires</label>
+                        
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Frites maison XXL</strong>
+                                <span class="price">4,50€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="frites-4.50" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Onion rings</strong>
+                                <span class="price">4,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="onion-4.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Nuggets chicken</strong>
+                                <span class="price">6,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="nuggets-6.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Milkshake</strong>
+                                <span class="price">4,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="milkshake-4.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items-grid">
+                    <!-- BOISSONS & DESSERTS avec bouton à droite -->
+                    <div class="form-group">
+                        <label>Boissons</label>
+                        
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Coca</strong>
+                                <span class="price">2,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="coca-2.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Fanta</strong>
+                                <span class="price">2,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="fanta-2.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Sprite</strong>
+                                <span class="price">2,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="sprite-2.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Ice tea</strong>
+                                <span class="price">2,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="ice-tea-2.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <!-- MILKSHAKE avec bouton à droite -->
+                    <div class="form-group">
+                        <label>Milkshakes</label>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Vanille</strong>
+                                <span class="price">4,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="milkshake-vanille-4.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Chocolat</strong>
+                                <span class="price">4,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="milkshake_chocolat-4.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Vanille</strong>
+                                <span class="price">4,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="milkshake-fraise-4.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items-grid">
+                    <!-- COOKIES avec bouton à droite -->
+                    <div class="form-group">
+                        <label>3 Cookies maison</label>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Aux pépites de chocolat</strong>
+                                <span class="price">3,90€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="milk-vanille-3.90" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- BROWNIES avec bouton à droite -->
+                    <div class="form-group">
+                        <label>Brownies chocolat</label>
+
+                        <div class="item-with-button">
+                            <div class="item-info">
+                                <strong>Fondant et généreux</strong>
+                                <span class="price">4,50€</span>
+                            </div>
+                            <button type="submit" name="ajouterItem" value="milk-vanille-4.50" class="btn-add">
+                                🛒 Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+
+
+            <!-- Heure de retrait avec Grid -->
+            <fieldset>
+                <legend>Heure de Retrait</legend>
+
+                <div class="date-time-grid">
+                    <div class="form-group">
+                        <label for="date">Date de retrait <span class="required">*</span></label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="heure">Heure souhaitée <span class="required">*</span></label>
+                        <input type="time" id="heure" name="heure" required min="11:00" max="22:00">
+                    </div>
+                </div>
+
+                <p class="form-note">Horaires d'ouverture : 11h00 - 22h00 tous les jours</p>
+            </fieldset>
+
+            <!-- Conditions -->
+            <div class="form-group">
+                <div class="checkbox-option">
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions">J'accepte les conditions générales de vente <span class="required">*</span></label>
+                </div>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <div class="submit-section">
+                <button type="submit">Valider ma commande 🍔</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Burger Great Again - Tous droits réservés</p>
+        <p>Des burgers qui rendent l'Amérique (et votre estomac) great again !</p>
+    </footer>
+</body>
+</html>

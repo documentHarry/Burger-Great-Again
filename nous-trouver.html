@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Great Again - Nous Trouver</title>
+    <!-- Variables CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <!-- Base -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- Components majeurs -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Components réutilisables -->
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Page spécifique (Contact) -->
+    <link rel="stylesheet" href="css/nous-trouver.css">
+    <!-- Responsive (TOUJOURS EN DERNIER) -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🍔 Burger Great Again</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="nos-valeurs.html">Nos Valeurs</a></li>
+                <li><a href="commande.html">Commande</a></li>
+                <li><a href="nous-trouver.html" class="active">Nous Trouver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Venez Nous Rendre Visite</h1>
+        <p class="page-subtitle">Nous sommes impatients de vous accueillir !</p>
+
+        <!-- Grille de contact avec CSS Grid -->
+        <div class="contact-grid">
+            <article class="info-card">
+                <div class="info-icon">📍</div>
+                <div class="info-content">
+                    <h3>Notre Adresse</h3>
+                    <p>12 Place Saint Roch</p>
+                    <p>6200 Châtelet, Belgique</p>
+                    <p>
+                        <a href="https://www.google.com/maps" target="_blank">Ouvrir dans Google Maps</a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="info-card">
+                <div class="info-icon">📞</div>
+                <div class="info-content">
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+33123456789">0479 22 25 14</a></p>
+                    <p>Du mardi au dimanche</p>
+                    <p>de 11h00 à 22h00</p>
+                </div>
+            </article>
+
+            <article class="info-card">
+                <div class="info-icon">✉️</div>
+                <div class="info-content">
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@burgergreatagain.fr">contact@burgergreatagain.be</a></p>
+                    <p>Réponse sous 24h</p>
+                </div>
+            </article>
+
+            <article class="info-card">
+                <div class="info-icon">🚗</div>
+                <div class="info-content">
+                    <h3>Parking</h3>
+                    <p>Parking gratuit disponible</p>
+                    <p>12 places devant le restaurant</p>
+                    <p>Accessible PMR</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Horaires d'ouverture -->
+        <section class="hours-section">
+            <h2>Nos Horaires d'Ouverture</h2>
+            <div class="hours-grid">
+                <div class="day-hours">
+                    <span class="day">Lundi</span>
+                    <span class="hours">11h00 - 22h00</span>
+                </div>
+                <div class="day-hours">
+                    <span class="day">Mardi</span>
+                    <span class="hours">11h00 - 22h00</span>
+                </div>
+                <div class="day-hours">
+                    <span class="day">Mercredi</span>
+                    <span class="hours">11h00 - 22h00</span>
+                </div>
+                <div class="day-hours">
+                    <span class="day">Jeudi</span>
+                    <span class="hours">11h00 - 22h00</span>
+                </div>
+                <div class="day-hours">
+                    <span class="day">Vendredi</span>
+                    <span class="hours">11h00 - 23h00</span>
+                </div>
+                <div class="day-hours">
+                    <span class="day">Samedi</span>
+                    <span class="hours">11h00 - 23h00</span>
+                </div>
+                <div class="day-hours">
+                    <span class="day">Dimanche</span>
+                    <span class="hours">12h00 - 22h00</span>
+                </div>
+            </div>
+            <p>Service continu toute la journée !</p>
+        </section>
+
+        <!-- Carte Google Maps -->
+        <section class="map-section">
+            <h2>📍 Localisation</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.8789456789!2d4.5294243!3d50.400615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2278c09f987ab%3A0xe4b1552e49895249!2sPl.%20Saint-Roch%2012%2C%206200%20Ch%C3%A2telet!5e0!3m2!1sfr!2sbe!4v1234567890" 
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <p>
+                En plein cœur de Châtelet, facilement accessible en bus ou voiture
+            </p>
+        </section>
+
+        <!-- Réseaux sociaux -->
+        <aside class="social-section">
+            <h2>Suivez-nous sur les Réseaux Sociaux</h2>
+            <p>Restez informés de nos offres et nouveautés !</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-link" title="Facebook" target="_blank">📘</a>
+                <a href="https://www.instagram.com/" class="social-link" title="Instagram" target="_blank">📷</a>
+                <a href="https://www.twitter.com/" class="social-link" title="Twitter" target="_blank">🐦</a>
+                <a href="https://www.tiktok.com/" class="social-link" title="TikTok" target="_blank">🎵</a>
+            </div>
+        </aside>
+
+        <!-- Informations pratiques avec Flexbox -->
+        <section class="practical-section">
+            <article class="practical-card transports">
+                <h3>🚇 Transports</h3>
+                <p><strong>Bus TEC :</strong> Lignes 18, 178</p>
+            </article>
+
+            <article class="practical-card promo">
+                <h3>🎁 Bons Plans</h3>
+                <p><strong>Happy Hour :</strong> -20% entre 14h et 16h</p>
+                <p><strong>Carte de fidélité :</strong> 10ème burger offert</p>
+                <p><strong>Étudiants :</strong> -10% sur présentation de la carte étudiant</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Burger Great Again - Tous droits réservés</p>
+        <p>Des burgers qui rendent l'Amérique (et votre estomac) great again !</p>
+    </footer>
+</body>
+</html>

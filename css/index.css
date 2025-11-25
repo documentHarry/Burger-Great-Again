@@ -1,0 +1,106 @@
+/* ========================================
+   INDEX - PAGE D'ACCUEIL
+   ======================================== */
+
+/* Section Hero */
+.hero {
+    background: linear-gradient(var(--bg-color-start), var(--bg-color-end)),
+                linear-gradient(135deg, var(--bg-color-hero1), 0%, var(--bg-color-hero2) 100%);
+    background-size: cover;
+    background-position: 50%;
+    color: var(--color-white);
+    text-align: center;
+    padding: 2rem 2rem;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-xl);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero:hover {
+    transform: translateY(-0.188rem);
+}
+
+.hero h2 {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 0.063rem 0.063rem 0.188rem rgba(0, 0, 0, 0.5);
+}
+
+/* Section titre "Pourquoi Burger Great Again ?" */
+.section-title {
+    text-align: center;
+}
+
+/* Grille des caractéristiques */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.feature-card {
+    background: var(--color-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-2xl);
+}
+
+/* Section info avec Flexbox */
+.info-section {
+    display: flex;
+    gap: var(--spacing-lg);
+    align-items: center;
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-lg);
+    background: var(--color-primary-light);
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-section img {
+    width: 18.75rem;
+    border-radius: var(--radius-lg);
+}
+
+.info-content {
+    flex: 1;
+}
+
+/* Offre du Moment */
+aside {
+    background: #e3f2fd;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+}
+
+aside h3 {
+    color: #1976d2 !important;
+    margin-bottom: 1rem;
+}
+
+aside p {
+    margin-bottom: 0.5rem;
+}
+
+aside p:nth-of-type(2) {
+    margin-top: 1rem;
+}
+
+aside p strong {
+    font-weight: bold;
+}

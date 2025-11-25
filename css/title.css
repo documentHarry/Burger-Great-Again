@@ -1,0 +1,26 @@
+/* ========================================
+   TITRES ET TEXTE
+   ======================================== */
+.page-title {
+    text-align: center;
+    color: var(--color-primary);
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.page-subtitle {
+    text-align: center;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xl);
+    font-size: var(--font-size-lg);
+}
+
+section h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-lg);
+}
+
+section h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+}

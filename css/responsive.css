@@ -1,0 +1,322 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* ========================================
+   MOBILE - Écrans < 48rem (768px)
+   ======================================== */
+@media (max-width: 48rem) {
+    /* Header et Navigation */
+    nav {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    /* Typography */
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Home Page */
+    .hero {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: var(--font-size-base);
+    }
+
+    .info-section {
+        flex-direction: column;
+    }
+
+    .info-section img {
+        width: 100%;
+    }
+
+    .feature-card {
+        padding: var(--spacing-md);
+    }
+
+    /* Order Page / Formulaires */
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-box-icon {
+        font-size: 2.5rem;
+    }
+
+    .date-time-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    fieldset {
+        padding: var(--spacing-md);
+    }
+
+    legend {
+        font-size: var(--font-size-xl);
+    }
+
+    button[type="submit"],
+    input[type="submit"] {
+        padding: var(--spacing-md) var(--spacing-lg);
+        width: 100%;
+    }
+
+    /* Values Page */
+    .intro-section {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .intro-section img {
+        width: 100%;
+    }
+
+    .intro-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .process-step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .process-icon {
+        font-size: 3rem;
+        min-width: auto;
+    }
+
+    .engagements-list {
+        padding: var(--spacing-md);
+    }
+
+    /* Contact Page */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-icon {
+        font-size: 2rem;
+    }
+
+    .map-container {
+        height: 18.75rem;
+    }
+
+    .hours-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hours-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-icons {
+        gap: var(--spacing-md);
+    }
+
+    .social-link {
+        font-size: 2.5rem;
+    }
+
+    .social-section h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Products Page */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        padding: 1rem;
+    }
+
+    .sides-container {
+        gap: 1rem;
+    }
+
+    .side-item {
+        min-width: 100%;
+    }
+
+    .item-with-button {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: stretch;
+    }
+    
+    .btn-add {
+        width: 100%;
+    }
+
+    .cta-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-section .btn {
+        width: 100%;
+    }
+
+    /* Main et Layout */
+    main {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+    }
+}
+
+/* ========================================
+   TABLETTE - Écrans 48.063rem à 64rem (768px à 1024px)
+   ======================================== */
+@media (min-width: 48.063rem) and (max-width: 64rem) {
+    /* Hero */
+    .hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Typography */
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Values Grid */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Grid */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        flex-direction: row;
+    }
+
+    /* Products Grid */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Info Section */
+    .info-section {
+        flex-direction: column;
+    }
+
+    .info-section img {
+        width: 100%;
+    }
+
+    /* Intro Section */
+    .intro-section {
+        flex-direction: column;
+    }
+
+    .intro-section img {
+        width: 100%;
+    }
+
+    /* Process */
+    .process-step {
+        flex-direction: row;
+    }
+
+    .process-step:nth-child(even) {
+        flex-direction: row;
+    }
+}
+
+/* ========================================
+   DESKTOP - Écrans >= 64.063rem (1024px+)
+   ======================================== */
+@media (min-width: 64.063rem) {
+    /* Aucune modification nécessaire, styles desktop par défaut */
+}
+
+/* ========================================
+   GRAND ÉCRAN - Écrans >= 80rem (1280px+)
+   ======================================== */
+@media (min-width: 80rem) {
+    main {
+        max-width: 85rem;
+    }
+
+    nav {
+        max-width: 85rem;
+    }
+}
+
+/* ========================================
+   TRÈS GRAND ÉCRAN - Écrans >= 96rem (1536px+)
+   ======================================== */
+@media (min-width: 96rem) {
+    main {
+        max-width: 95rem;
+    }
+
+    nav {
+        max-width: 95rem;
+    }
+
+    .page-title {
+        font-size: var(--font-size-5xl);
+    }
+}

@@ -1,0 +1,12 @@
+/* ========================================
+   LAYOUT - MISE EN PAGE
+   ======================================== */
+main {
+    max-width: 75rem;
+    margin: 2rem auto;
+    padding: 0 1.25rem;
+}
+
+section {
+    margin: var(--spacing-xl) 0;
+}

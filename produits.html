@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Great Again - Nos Produits</title>
+    <!-- Variables CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <!-- Base -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- Components majeurs -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Components réutilisables -->
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Page spécifique (Produits) -->
+    <link rel="stylesheet" href="css/produits.css">
+    <!-- Responsive (TOUJOURS EN DERNIER) -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🍔 Burger Great Again</h1>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html" class="active">Produits</a></li>
+                <li><a href="nos-valeurs.html">Nos Valeurs</a></li>
+                <li><a href="commande.html">Commande</a></li>
+                <li><a href="nous-trouver.html">Nous Trouver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Notre Menu XXL</h1>
+        <p class="page-subtitle">Des portions généreuses, des saveurs authentiques, des prix honnêtes</p>
+
+        <!-- Section Burgers -->
+        <section>
+            <h2>🍔 Nos Burgers Légendaires</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-icon">🍔</div>
+                    <h3>The President</h3>
+                    <p>Le burger présidentiel : double steak haché 100% pur bœuf, cheddar fondant, bacon croustillant, oignons frits maison</p>
+                    <div class="product-price">12,90€</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-icon">🏰</div>
+                    <h3>The Wall</h3>
+                    <p>Une vraie muraille de saveurs : triple étage de steaks, fromages multiples, bacon, légumes frais, sauces spéciales</p>
+                    <div class="product-price">15,90€</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-icon">🦅</div>
+                    <h3>Freedom Burger</h3>
+                    <p>Le classique américain revisité : steak XXL, salade croquante, tomate fraîche, oignons, cornichons, sauce BBQ fumée</p>
+                    <div class="product-price">11,90€</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-icon">⭐</div>
+                    <h3>The Patriot</h3>
+                    <p>Notre création signature : steak premium, sauce maison secrète, pickles croquants, oignons caramélisés, bacon</p>
+                    <div class="product-price">13,90€</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-icon">🥗</div>
+                    <h3>Great Veggie</h3>
+                    <p>Version végétarienne XXL : steak végétal de qualité, légumes grillés, guacamole maison, cheddar végétal</p>
+                    <div class="product-price">11,90€</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section Pizzas -->
+        <section>
+            <h2>🍕 Nos Pizzas Géantes</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="product-icon">🍕</div>
+                    <h3>Pizza Americana</h3>
+                    <p>La classique revisitée : pepperoni généreux, mozzarella fondante, sauce tomate maison, origan frais</p>
+                    <div class="product-price">13,90€</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-icon">🧀</div>
+                    <h3>Pizza Supreme</h3>
+                    <p>Tous les ingrédients, comme notre pays : pepperoni, jambon, champignons, poivrons, olives, oignons, fromage</p>
+                    <div class="product-price">15,90€</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-icon">🥧🍅</div>
+                    <h3>Pizza Margherita Deluxe</h3>
+                    <p>La classique italienne en version XXL : tomate, mozzarella buffalo, basilic frais, huile d'olive extra vierge</p>
+                    <div class="product-price">11,90€</div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-icon">🐔</div>
+                    <h3>Pizza BBQ Chicken</h3>
+                    <p>L'américaine par excellence : poulet fumé, sauce BBQ, oignons rouges, mozzarella, coriandre fraîche</p>
+                    <div class="product-price">14,90€</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section Accompagnements avec Flexbox -->
+        <section>
+            <h2>🍟 Accompagnements</h2>
+            <div class="sides-container">
+                <article class="side-item">
+                    <h3>Frites Maison XXL</h3>
+                    <p>Croustillantes à l'extérieur, fondantes à l'intérieur</p>
+                    <p class="product-price">4,50€</p>
+                </article>
+
+                <article class="side-item">
+                    <h3>Onion Rings</h3>
+                    <p>Rondelles d'oignons panées croustillantes</p>
+                    <p class="product-price">4,90€</p>
+                </article>
+
+                <article class="side-item">
+                    <h3>Nuggets Chicken</h3>
+                    <p>10 pièces de poulet pané doré</p>
+                    <p class="product-price">6,90€</p>
+                </article>
+
+                <article class="side-item">
+                    <h3>Salade Caesar</h3>
+                    <p>Fraîcheur et croquant, sauce Caesar maison</p>
+                    <p class="product-price">5,90€</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Section Boissons & Desserts -->
+        <section>
+            <h2>🥤 Boissons & Desserts</h2>
+            <div class="sides-container">
+                <article class="side-item">
+                    <h3>Sodas</h3>
+                    <p>Coca, Fanta, Sprite, Ice Tea</p>
+                    <p class="product-price">2,90€</p>
+                </article>
+
+                <article class="side-item">
+                    <h3>Milkshakes</h3>
+                    <p>Vanille, chocolat ou fraise</p>
+                    <p class="product-price">4,90€</p>
+                </article>
+
+                <article class="side-item">
+                    <h3>Cookies Maison</h3>
+                    <p>3 cookies aux pépites de chocolat</p>
+                    <p class="product-price">3,90€</p>
+                </article>
+
+                <article class="side-item">
+                    <h3>Brownie Chocolat</h3>
+                    <p>Fondant et généreux</p>
+                    <p class="product-price">4,50€</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <aside class="cta-section">
+            <h2>Prêt à Commander ?</h2>
+            <p>Nos portions XXL vous attendent ! Commandez maintenant et venez récupérer votre festin.</p>
+            <a href="commande.html" class="btn">Commander Maintenant</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Burger Great Again - Tous droits réservés</p>
+        <p>Des burgers qui rendent l'Amérique (et votre estomac) great again !</p>
+    </footer>
+</body>
+</html>
